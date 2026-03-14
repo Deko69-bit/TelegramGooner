@@ -1,3 +1,23 @@
 <html>
- fishman
+
+<head>
+    <meta charset="UTF-8">
+    <Title>000</Title>
+    <script scr="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+
+    <button onclick="hello()">Нажми меня</button>
+
+    <script>
+        const tg = window.Telegram.WebApp;
+        const user = tg.initDataUnsafe.user;
+        function hello() {
+            alert("Твое имя: " + user.first_name);
+        }
+    </script>
+
+</body>
+
 </html>
